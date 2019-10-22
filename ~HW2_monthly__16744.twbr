@@ -1,0 +1,1329 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20193.19.0821.2225                               -->
+<workbook source-build='2019.3.0 (20193.19.0821.2225)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='monthly_sales' inline='true' name='federated.01ogvos1sezrmd13a8o630v149f2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='monthly_sales' name='textscan.0k7svt40wb88jc1fctxrv1lrhro9'>
+            <connection class='textscan' directory='C:/Users/sharm/dsc106/HW2/dsc106-hw2' filename='monthly_sales.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0k7svt40wb88jc1fctxrv1lrhro9' name='monthly_sales.csv' table='[monthly_sales#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' date-parse-format='MMM-yy' name='Month, Year' ordinal='0' />
+            <column datatype='integer' name='HM-NE' ordinal='1' />
+            <column datatype='integer' name='CF-NE' ordinal='2' />
+            <column datatype='integer' name='FF-NE' ordinal='3' />
+            <column datatype='integer' name='HM-SW' ordinal='4' />
+            <column datatype='integer' name='CF-SW' ordinal='5' />
+            <column datatype='integer' name='FF-SW' ordinal='6' />
+            <column datatype='integer' name='HM-NW' ordinal='7' />
+            <column datatype='integer' name='CF-NW' ordinal='8' />
+            <column datatype='integer' name='FF-NW' ordinal='9' />
+            <column datatype='integer' name='HM-SE' ordinal='10' />
+            <column datatype='integer' name='CF-SE' ordinal='11' />
+            <column datatype='integer' name='FF-SE' ordinal='12' />
+            <column datatype='integer' name='HM-C' ordinal='13' />
+            <column datatype='integer' name='CF-C' ordinal='14' />
+            <column datatype='integer' name='FF-C' ordinal='15' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[monthly_sales.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month, Year</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Month, Year]</local-name>
+            <parent-name>[monthly_sales.csv]</parent-name>
+            <remote-alias>Month, Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HM-NE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HM-NE]</local-name>
+            <parent-name>[monthly_sales.csv]</parent-name>
+            <remote-alias>HM-NE</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CF-NE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CF-NE]</local-name>
+            <parent-name>[monthly_sales.csv]</parent-name>
+            <remote-alias>CF-NE</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FF-NE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FF-NE]</local-name>
+            <parent-name>[monthly_sales.csv]</parent-name>
+            <remote-alias>FF-NE</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HM-SW</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HM-SW]</local-name>
+            <parent-name>[monthly_sales.csv]</parent-name>
+            <remote-alias>HM-SW</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CF-SW</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CF-SW]</local-name>
+            <parent-name>[monthly_sales.csv]</parent-name>
+            <remote-alias>CF-SW</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FF-SW</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FF-SW]</local-name>
+            <parent-name>[monthly_sales.csv]</parent-name>
+            <remote-alias>FF-SW</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HM-NW</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HM-NW]</local-name>
+            <parent-name>[monthly_sales.csv]</parent-name>
+            <remote-alias>HM-NW</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CF-NW</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CF-NW]</local-name>
+            <parent-name>[monthly_sales.csv]</parent-name>
+            <remote-alias>CF-NW</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FF-NW</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FF-NW]</local-name>
+            <parent-name>[monthly_sales.csv]</parent-name>
+            <remote-alias>FF-NW</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HM-SE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HM-SE]</local-name>
+            <parent-name>[monthly_sales.csv]</parent-name>
+            <remote-alias>HM-SE</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CF-SE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CF-SE]</local-name>
+            <parent-name>[monthly_sales.csv]</parent-name>
+            <remote-alias>CF-SE</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FF-SE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FF-SE]</local-name>
+            <parent-name>[monthly_sales.csv]</parent-name>
+            <remote-alias>FF-SE</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HM-C</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HM-C]</local-name>
+            <parent-name>[monthly_sales.csv]</parent-name>
+            <remote-alias>HM-C</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CF-C</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CF-C]</local-name>
+            <parent-name>[monthly_sales.csv]</parent-name>
+            <remote-alias>CF-C</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FF-C</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FF-C]</local-name>
+            <parent-name>[monthly_sales.csv]</parent-name>
+            <remote-alias>FF-C</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:Calculation_1178254298807713795:qk]&quot;' value='Fish Fillet' />
+          <alias key='&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:Calculation_1178254298808029188:qk]&quot;' value='Chicken Fillet' />
+          <alias key='&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:Calculation_1178254298809303045:qk]&quot;' value='Hamburger' />
+          <alias key='&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:HM-C:qk]&quot;' value='HM - Central' />
+        </aliases>
+      </column>
+      <column caption='CF  - Central' datatype='integer' name='[CF-C]' role='measure' type='quantitative' />
+      <column caption='CF - Northeast' datatype='integer' name='[CF-NE]' role='measure' type='quantitative' />
+      <column caption='CF - Northwest' datatype='integer' name='[CF-NW]' role='measure' type='quantitative' />
+      <column caption='CF - Southeast' datatype='integer' name='[CF-SE]' role='measure' type='quantitative' />
+      <column caption='CF - Southwest' datatype='integer' name='[CF-SW]' role='measure' type='quantitative' />
+      <column caption='FF' datatype='integer' name='[Calculation_1178254298807713795]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[FF-C]+[FF-NE]+[FF-NW]+[FF-SE]+[FF-SW]' />
+      </column>
+      <column caption='CF' datatype='integer' name='[Calculation_1178254298808029188]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[CF-C]+[CF-NE]+[CF-NW]+[CF-SE]+[CF-SW]' />
+      </column>
+      <column caption='HM' datatype='integer' name='[Calculation_1178254298809303045]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[HM-C]+[HM-NE]+[HM-NW]+[HM-SE]+[HM-SW]' />
+      </column>
+      <column caption='AverageScore CF' datatype='real' name='[Calculation_1178254298809982982]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_AVG(SUM([Calculation_1178254298808029188]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='AverageScore FF' datatype='real' name='[Calculation_1178254298810064903]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_AVG(SUM([Calculation_1178254298807713795]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='AverageScore HM' datatype='real' name='[Calculation_1178254298810118152]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_AVG(SUM([Calculation_1178254298809303045]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='STDEVPSales CF' datatype='real' name='[Calculation_1178254298810163209]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_STDEVP(SUM([Calculation_1178254298808029188]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='STDEVPSales FF' datatype='real' name='[Calculation_1178254298810765322]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_STDEVP(SUM([Calculation_1178254298807713795]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='STDEVPSales HM' datatype='real' name='[Calculation_1178254298810843147]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_STDEVP(SUM([Calculation_1178254298809303045]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='ZScore CF' datatype='real' name='[Calculation_1178254298810933260]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(SUM([Calculation_1178254298808029188]) - [Calculation_1178254298809982982]) / [Calculation_1178254298810163209]'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='ZScore FF' datatype='real' name='[Calculation_1178254298811203597]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(SUM([Calculation_1178254298807713795]) - [Calculation_1178254298810064903]) / [Calculation_1178254298810765322]'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='ZScore HM' datatype='real' name='[Calculation_1178254298811289614]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(SUM([Calculation_1178254298809303045]) - [Calculation_1178254298810118152]) / [Calculation_1178254298810843147]'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='FF  - Central' datatype='integer' name='[FF-C]' role='measure' type='quantitative' />
+      <column caption='FF - Northeast' datatype='integer' name='[FF-NE]' role='measure' type='quantitative' />
+      <column caption='FF - Northwest' datatype='integer' name='[FF-NW]' role='measure' type='quantitative' />
+      <column caption='FF - Southeast' datatype='integer' name='[FF-SE]' role='measure' type='quantitative' />
+      <column caption='FF - Southwest' datatype='integer' name='[FF-SW]' role='measure' type='quantitative' />
+      <column caption='HM  - Central' datatype='integer' name='[HM-C]' role='measure' type='quantitative' />
+      <column caption='HM - Northeast' datatype='integer' name='[HM-NE]' role='measure' type='quantitative' />
+      <column caption='HM - Northwest' datatype='integer' name='[HM-NW]' role='measure' type='quantitative' />
+      <column caption='HM - Southeast' datatype='integer' name='[HM-SE]' role='measure' type='quantitative' />
+      <column caption='HM - Southwest' datatype='integer' name='[HM-SW]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column-instance column='[FF-C]' derivation='Avg' name='[avg:FF-C:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FF-NE]' derivation='Avg' name='[avg:FF-NE:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FF-NW]' derivation='Avg' name='[avg:FF-NW:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FF-SE]' derivation='Avg' name='[avg:FF-SE:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FF-SW]' derivation='Avg' name='[avg:FF-SW:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1178254298808029188]' derivation='Count' name='[cnt:Calculation_1178254298808029188:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CF-C]' derivation='Sum' name='[sum:CF-C:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CF-NE]' derivation='Sum' name='[sum:CF-NE:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CF-NW]' derivation='Sum' name='[sum:CF-NW:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CF-SE]' derivation='Sum' name='[sum:CF-SE:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CF-SW]' derivation='Sum' name='[sum:CF-SW:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1178254298807713795]' derivation='Sum' name='[sum:Calculation_1178254298807713795:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1178254298808029188]' derivation='Sum' name='[sum:Calculation_1178254298808029188:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1178254298809303045]' derivation='Sum' name='[sum:Calculation_1178254298809303045:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FF-C]' derivation='Sum' name='[sum:FF-C:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FF-NE]' derivation='Sum' name='[sum:FF-NE:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FF-NW]' derivation='Sum' name='[sum:FF-NW:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FF-SE]' derivation='Sum' name='[sum:FF-SE:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FF-SW]' derivation='Sum' name='[sum:FF-SW:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[HM-C]' derivation='Sum' name='[sum:HM-C:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[HM-NE]' derivation='Sum' name='[sum:HM-NE:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[HM-NW]' derivation='Sum' name='[sum:HM-NW:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[HM-SE]' derivation='Sum' name='[sum:HM-SE:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[HM-SW]' derivation='Sum' name='[sum:HM-SW:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1178254298809982982]' derivation='User' name='[usr:Calculation_1178254298809982982:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Calculation_1178254298810064903]' derivation='User' name='[usr:Calculation_1178254298810064903:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Calculation_1178254298810118152]' derivation='User' name='[usr:Calculation_1178254298810118152:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Calculation_1178254298810163209]' derivation='User' name='[usr:Calculation_1178254298810163209:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Calculation_1178254298810765322]' derivation='User' name='[usr:Calculation_1178254298810765322:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Calculation_1178254298810843147]' derivation='User' name='[usr:Calculation_1178254298810843147:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Calculation_1178254298810933260]' derivation='User' name='[usr:Calculation_1178254298810933260:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+        <table-calc field='[federated.01ogvos1sezrmd13a8o630v149f2].[Calculation_1178254298809982982]' ordering-type='Rows' />
+        <table-calc field='[federated.01ogvos1sezrmd13a8o630v149f2].[Calculation_1178254298810163209]' ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Calculation_1178254298811203597]' derivation='User' name='[usr:Calculation_1178254298811203597:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+        <table-calc field='[federated.01ogvos1sezrmd13a8o630v149f2].[Calculation_1178254298810064903]' ordering-type='Rows' />
+        <table-calc field='[federated.01ogvos1sezrmd13a8o630v149f2].[Calculation_1178254298810765322]' ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Calculation_1178254298811289614]' derivation='User' name='[usr:Calculation_1178254298811289614:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+        <table-calc field='[federated.01ogvos1sezrmd13a8o630v149f2].[Calculation_1178254298810118152]' ordering-type='Rows' />
+        <table-calc field='[federated.01ogvos1sezrmd13a8o630v149f2].[Calculation_1178254298810843147]' ordering-type='Rows' />
+      </column-instance>
+      <layout dim-ordering='alphabetic' dim-percentage='0.166821' measure-ordering='alphabetic' measure-percentage='0.833179' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='purple_pink_gray_10_0' type='palette'>
+            <map to='#2c5985'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:Calculation_1178254298809303045:qk]&quot;</bucket>
+            </map>
+            <map to='#2c5985'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:HM-C:qk]&quot;</bucket>
+            </map>
+            <map to='#2c5985'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[usr:Calculation_1178254298811289614:qk]&quot;</bucket>
+            </map>
+            <map to='#45a2b9'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:Calculation_1178254298807713795:qk]&quot;</bucket>
+            </map>
+            <map to='#45a2b9'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[usr:Calculation_1178254298811203597:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[usr:Calculation_1178254298805403648:qk:1]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[usr:Calculation_1178254298805403648:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[avg:FF-SW:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[avg:FF-SE:qk]&quot;</bucket>
+            </map>
+            <map to='#8074a8'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:CF-C:qk]&quot;</bucket>
+            </map>
+            <map to='#8074a8'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:FF-C:qk]&quot;</bucket>
+            </map>
+            <map to='#8074a8'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[usr:Calculation_1178254298809982982:qk]&quot;</bucket>
+            </map>
+            <map to='#8074a8'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[usr:Calculation_1178254298810843147:qk]&quot;</bucket>
+            </map>
+            <map to='#9b93c9'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#9c9290'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:CF-SW:qk]&quot;</bucket>
+            </map>
+            <map to='#9c9290'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:FF-SW:qk]&quot;</bucket>
+            </map>
+            <map to='#9c9290'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:HM-SW:qk]&quot;</bucket>
+            </map>
+            <map to='#bce4d8'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[cnt:Calculation_1178254298808029188:qk]&quot;</bucket>
+            </map>
+            <map to='#bce4d8'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:Calculation_1178254298808029188:qk]&quot;</bucket>
+            </map>
+            <map to='#bce4d8'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[usr:Calculation_1178254298810933260:qk]&quot;</bucket>
+            </map>
+            <map to='#c46487'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:CF-NW:qk]&quot;</bucket>
+            </map>
+            <map to='#c46487'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:FF-NW:qk]&quot;</bucket>
+            </map>
+            <map to='#c46487'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:HM-NW:qk]&quot;</bucket>
+            </map>
+            <map to='#c46487'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[usr:Calculation_1178254298810118152:qk]&quot;</bucket>
+            </map>
+            <map to='#c6c1f0'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:CF-NE:qk]&quot;</bucket>
+            </map>
+            <map to='#c6c1f0'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:FF-NE:qk]&quot;</bucket>
+            </map>
+            <map to='#c6c1f0'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:HM-NE:qk]&quot;</bucket>
+            </map>
+            <map to='#c6c1f0'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[usr:Calculation_1178254298810064903:qk]&quot;</bucket>
+            </map>
+            <map to='#c799bc'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[usr:Calculation_1178254298810765322:qk]&quot;</bucket>
+            </map>
+            <map to='#ddb5d5'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[usr:Calculation_1178254298810163209:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[avg:FF-NW:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[avg:FF-C:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[avg:FF-NE:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbed1'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2]&quot;</bucket>
+            </map>
+            <map to='#ffbed1'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:CF-SE:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbed1'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:FF-SE:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbed1'>
+              <bucket>&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:HM-SE:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='monthly_sales' name='federated.01ogvos1sezrmd13a8o630v149f2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01ogvos1sezrmd13a8o630v149f2'>
+            <column caption='CF  - Central' datatype='integer' name='[CF-C]' role='measure' type='quantitative' />
+            <column caption='FF  - Central' datatype='integer' name='[FF-C]' role='measure' type='quantitative' />
+            <column caption='HM  - Central' datatype='integer' name='[HM-C]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Month, Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Month, Year]' derivation='None' name='[none:Month, Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CF-C]' derivation='Sum' name='[sum:CF-C:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[FF-C]' derivation='Sum' name='[sum:FF-C:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[HM-C]' derivation='Sum' name='[sum:HM-C:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:CF-C:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:FF-C:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:HM-C:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]' field-type='quantitative' max='#2019-11-09#' min='#2015-12-24 00:00:00#' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.01ogvos1sezrmd13a8o630v149f2].[Multiple Values]' scope='rows' value='Number of Sales' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]' value='*mmmm yyyy' />
+            <format attr='text-orientation' field='[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]' value='-90' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='text-format' id='refline0' value='*mmmm yyyy' />
+            <format attr='text-orientation' id='refline0' value='-90' />
+            <format attr='text-format' id='refline1' value='*mmmm yyyy' />
+            <format attr='text-orientation' id='refline1' value='-90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]' />
+            </encodings>
+            <reference-line axis-column='[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label-type='automatic' scope='per-table' value='#2018-10-01#' value-column='[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]' z-order='1' />
+          </pane>
+        </panes>
+        <rows>[federated.01ogvos1sezrmd13a8o630v149f2].[Multiple Values]</rows>
+        <cols>[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]</cols>
+      </table>
+      <simple-id uuid='{593CB9C4-79A3-4E2F-B708-9316FD69837A}' />
+    </worksheet>
+    <worksheet name='Sheet 10'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{4C03D3BA-38F2-4EB9-B11E-671B0A9CF079}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='monthly_sales' name='federated.01ogvos1sezrmd13a8o630v149f2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01ogvos1sezrmd13a8o630v149f2'>
+            <column caption='CF  - Central' datatype='integer' name='[CF-C]' role='measure' type='quantitative' />
+            <column caption='CF - Northeast' datatype='integer' name='[CF-NE]' role='measure' type='quantitative' />
+            <column caption='CF - Northwest' datatype='integer' name='[CF-NW]' role='measure' type='quantitative' />
+            <column caption='CF - Southeast' datatype='integer' name='[CF-SE]' role='measure' type='quantitative' />
+            <column caption='CF - Southwest' datatype='integer' name='[CF-SW]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Month, Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Month, Year]' derivation='None' name='[none:Month, Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CF-C]' derivation='Sum' name='[sum:CF-C:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CF-NE]' derivation='Sum' name='[sum:CF-NE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CF-NW]' derivation='Sum' name='[sum:CF-NW:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CF-SE]' derivation='Sum' name='[sum:CF-SE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CF-SW]' derivation='Sum' name='[sum:CF-SW:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:CF-C:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:CF-NE:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:CF-NW:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:CF-SE:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:CF-SW:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]' field-type='quantitative' max='#2019-11-09#' min='#2015-12-24 00:00:00#' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.01ogvos1sezrmd13a8o630v149f2].[Multiple Values]' scope='rows' value='Number of Sales' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]' value='*mmmm yyyy' />
+            <format attr='text-orientation' field='[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]' value='-90' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='text-format' id='refline0' value='*mmmm yyyy' />
+            <format attr='text-format' id='refline1' value='*mmmm yyyy' />
+            <format attr='text-orientation' id='refline1' value='-90' />
+            <format attr='text-orientation' id='refline0' value='-90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]' />
+              <color column='[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]' />
+            </encodings>
+            <reference-line axis-column='[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label-type='automatic' scope='per-table' value='#2018-10-01#' value-column='[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]' z-order='1' />
+          </pane>
+        </panes>
+        <rows>[federated.01ogvos1sezrmd13a8o630v149f2].[Multiple Values]</rows>
+        <cols>[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]</cols>
+      </table>
+      <simple-id uuid='{1157C265-A00A-41D8-808A-11CF9BCF6306}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='monthly_sales' name='federated.01ogvos1sezrmd13a8o630v149f2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01ogvos1sezrmd13a8o630v149f2'>
+            <column caption='FF  - Central' datatype='integer' name='[FF-C]' role='measure' type='quantitative' />
+            <column caption='FF - Northeast' datatype='integer' name='[FF-NE]' role='measure' type='quantitative' />
+            <column caption='FF - Northwest' datatype='integer' name='[FF-NW]' role='measure' type='quantitative' />
+            <column caption='FF - Southeast' datatype='integer' name='[FF-SE]' role='measure' type='quantitative' />
+            <column caption='FF - Southwest' datatype='integer' name='[FF-SW]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Month, Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Month, Year]' derivation='None' name='[none:Month, Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[FF-C]' derivation='Sum' name='[sum:FF-C:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[FF-NE]' derivation='Sum' name='[sum:FF-NE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[FF-NW]' derivation='Sum' name='[sum:FF-NW:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[FF-SE]' derivation='Sum' name='[sum:FF-SE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[FF-SW]' derivation='Sum' name='[sum:FF-SW:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:FF-C:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:FF-NE:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:FF-NW:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:FF-SE:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:FF-SW:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]' field-type='quantitative' max='#2019-11-09#' min='#2015-12-24 00:00:00#' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.01ogvos1sezrmd13a8o630v149f2].[Multiple Values]' scope='rows' value='Number of Sales' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]' value='*mmmm yyyy' />
+            <format attr='text-orientation' field='[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]' value='-90' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='text-format' id='refline1' value='*mmmm yyyy' />
+            <format attr='text-orientation' id='refline1' value='-90' />
+            <format attr='text-format' id='refline0' value='*mmmm yyyy' />
+            <format attr='text-orientation' id='refline0' value='-90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]' />
+            </encodings>
+            <reference-line axis-column='[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label-type='automatic' scope='per-table' value='#2018-10-01#' value-column='[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01ogvos1sezrmd13a8o630v149f2].[Multiple Values]</rows>
+        <cols>[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]</cols>
+      </table>
+      <simple-id uuid='{600592EF-E45C-47D3-B355-AC87E534473C}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Hamburger Sales from Various Regions</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='monthly_sales' name='federated.01ogvos1sezrmd13a8o630v149f2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01ogvos1sezrmd13a8o630v149f2'>
+            <column caption='HM  - Central' datatype='integer' name='[HM-C]' role='measure' type='quantitative' />
+            <column caption='HM - Northeast' datatype='integer' name='[HM-NE]' role='measure' type='quantitative' />
+            <column caption='HM - Northwest' datatype='integer' name='[HM-NW]' role='measure' type='quantitative' />
+            <column caption='HM - Southeast' datatype='integer' name='[HM-SE]' role='measure' type='quantitative' />
+            <column caption='HM - Southwest' datatype='integer' name='[HM-SW]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Month, Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Month, Year]' derivation='None' name='[none:Month, Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[HM-C]' derivation='Sum' name='[sum:HM-C:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[HM-NE]' derivation='Sum' name='[sum:HM-NE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[HM-NW]' derivation='Sum' name='[sum:HM-NW:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[HM-SE]' derivation='Sum' name='[sum:HM-SE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[HM-SW]' derivation='Sum' name='[sum:HM-SW:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:HM-C:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:HM-NE:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:HM-NW:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:HM-SE:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:HM-SW:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]' field-type='quantitative' major-origin='#2017-10-31#' major-spacing='1' major-units='months' max='#2019-11-09#' min='#2015-12-01 00:00:00#' minor-origin='#2017-10-31#' minor-spacing='1' minor-units='months' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.01ogvos1sezrmd13a8o630v149f2].[Multiple Values]' scope='rows' value='Number of Sales' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]' value='*mmmm yyyy' />
+            <format attr='text-orientation' field='[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]' value='-90' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='text-format' id='refline1' value='*mmmm yyyy' />
+            <format attr='text-orientation' id='refline1' value='-90' />
+            <format attr='text-format' id='refline0' value='*mmmm yyyy' />
+            <format attr='text-orientation' id='refline0' value='-90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]' />
+              <color column='[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]' />
+            </encodings>
+            <reference-line axis-column='[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label-type='automatic' scope='per-table' value='#2018-10-01#' value-column='[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]' z-order='1' />
+          </pane>
+        </panes>
+        <rows>[federated.01ogvos1sezrmd13a8o630v149f2].[Multiple Values]</rows>
+        <cols>[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]</cols>
+      </table>
+      <simple-id uuid='{724FF6DF-7786-460B-BCB3-15C5B318B8A7}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Standardized Chicken Fillet (CF), Fish Fillet (FF), and Hamburger (HM) Sales</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='monthly_sales' name='federated.01ogvos1sezrmd13a8o630v149f2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01ogvos1sezrmd13a8o630v149f2'>
+            <column caption='CF  - Central' datatype='integer' name='[CF-C]' role='measure' type='quantitative' />
+            <column caption='CF - Northeast' datatype='integer' name='[CF-NE]' role='measure' type='quantitative' />
+            <column caption='CF - Northwest' datatype='integer' name='[CF-NW]' role='measure' type='quantitative' />
+            <column caption='CF - Southeast' datatype='integer' name='[CF-SE]' role='measure' type='quantitative' />
+            <column caption='CF - Southwest' datatype='integer' name='[CF-SW]' role='measure' type='quantitative' />
+            <column caption='FF' datatype='integer' name='[Calculation_1178254298807713795]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[FF-C]+[FF-NE]+[FF-NW]+[FF-SE]+[FF-SW]' />
+            </column>
+            <column caption='CF' datatype='integer' name='[Calculation_1178254298808029188]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[CF-C]+[CF-NE]+[CF-NW]+[CF-SE]+[CF-SW]' />
+            </column>
+            <column caption='HM' datatype='integer' name='[Calculation_1178254298809303045]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[HM-C]+[HM-NE]+[HM-NW]+[HM-SE]+[HM-SW]' />
+            </column>
+            <column caption='AverageScore CF' datatype='real' name='[Calculation_1178254298809982982]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='WINDOW_AVG(SUM([Calculation_1178254298808029188]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='AverageScore FF' datatype='real' name='[Calculation_1178254298810064903]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='WINDOW_AVG(SUM([Calculation_1178254298807713795]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='AverageScore HM' datatype='real' name='[Calculation_1178254298810118152]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='WINDOW_AVG(SUM([Calculation_1178254298809303045]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='STDEVPSales CF' datatype='real' name='[Calculation_1178254298810163209]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='WINDOW_STDEVP(SUM([Calculation_1178254298808029188]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='STDEVPSales FF' datatype='real' name='[Calculation_1178254298810765322]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='WINDOW_STDEVP(SUM([Calculation_1178254298807713795]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='STDEVPSales HM' datatype='real' name='[Calculation_1178254298810843147]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='WINDOW_STDEVP(SUM([Calculation_1178254298809303045]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='ZScore CF' datatype='real' name='[Calculation_1178254298810933260]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(SUM([Calculation_1178254298808029188]) - [Calculation_1178254298809982982]) / [Calculation_1178254298810163209]'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='ZScore FF' datatype='real' name='[Calculation_1178254298811203597]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(SUM([Calculation_1178254298807713795]) - [Calculation_1178254298810064903]) / [Calculation_1178254298810765322]'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='ZScore HM' datatype='real' name='[Calculation_1178254298811289614]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(SUM([Calculation_1178254298809303045]) - [Calculation_1178254298810118152]) / [Calculation_1178254298810843147]'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='FF  - Central' datatype='integer' name='[FF-C]' role='measure' type='quantitative' />
+            <column caption='FF - Northeast' datatype='integer' name='[FF-NE]' role='measure' type='quantitative' />
+            <column caption='FF - Northwest' datatype='integer' name='[FF-NW]' role='measure' type='quantitative' />
+            <column caption='FF - Southeast' datatype='integer' name='[FF-SE]' role='measure' type='quantitative' />
+            <column caption='FF - Southwest' datatype='integer' name='[FF-SW]' role='measure' type='quantitative' />
+            <column caption='HM  - Central' datatype='integer' name='[HM-C]' role='measure' type='quantitative' />
+            <column caption='HM - Northeast' datatype='integer' name='[HM-NE]' role='measure' type='quantitative' />
+            <column caption='HM - Northwest' datatype='integer' name='[HM-NW]' role='measure' type='quantitative' />
+            <column caption='HM - Southeast' datatype='integer' name='[HM-SE]' role='measure' type='quantitative' />
+            <column caption='HM - Southwest' datatype='integer' name='[HM-SW]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Month, Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Month, Year]' derivation='None' name='[none:Month, Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1178254298810933260]' derivation='User' name='[usr:Calculation_1178254298810933260:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+              <table-calc field='[federated.01ogvos1sezrmd13a8o630v149f2].[Calculation_1178254298809982982]' ordering-type='Rows' />
+              <table-calc field='[federated.01ogvos1sezrmd13a8o630v149f2].[Calculation_1178254298810163209]' ordering-type='Rows' />
+            </column-instance>
+            <column-instance column='[Calculation_1178254298811203597]' derivation='User' name='[usr:Calculation_1178254298811203597:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+              <table-calc field='[federated.01ogvos1sezrmd13a8o630v149f2].[Calculation_1178254298810064903]' ordering-type='Rows' />
+              <table-calc field='[federated.01ogvos1sezrmd13a8o630v149f2].[Calculation_1178254298810765322]' ordering-type='Rows' />
+            </column-instance>
+            <column-instance column='[Calculation_1178254298811289614]' derivation='User' name='[usr:Calculation_1178254298811289614:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+              <table-calc field='[federated.01ogvos1sezrmd13a8o630v149f2].[Calculation_1178254298810118152]' ordering-type='Rows' />
+              <table-calc field='[federated.01ogvos1sezrmd13a8o630v149f2].[Calculation_1178254298810843147]' ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[usr:Calculation_1178254298810933260:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[usr:Calculation_1178254298811203597:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[usr:Calculation_1178254298811289614:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]' field-type='quantitative' max='#2019-11-09#' min='#2015-12-24 00:00:00#' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.01ogvos1sezrmd13a8o630v149f2].[Multiple Values]' scope='rows' value='Number of Sales' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]' value='*mmmm yyyy' />
+            <format attr='text-orientation' field='[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]' value='-90' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='text-format' id='refline0' value='*mmmm yyyy' />
+            <format attr='text-orientation' id='refline0' value='-90' />
+            <format attr='text-format' id='refline1' value='*mmmm yyyy' />
+            <format attr='text-orientation' id='refline1' value='-90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]' />
+              <color column='[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]' />
+            </encodings>
+            <reference-line axis-column='[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label-type='automatic' scope='per-table' value='#2018-10-01#' value-column='[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01ogvos1sezrmd13a8o630v149f2].[Multiple Values]</rows>
+        <cols>[federated.01ogvos1sezrmd13a8o630v149f2].[none:Month, Year:qk]</cols>
+      </table>
+      <simple-id uuid='{2FA9FC14-D9C1-4A62-A3B8-03D04022C187}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='monthly_sales' name='federated.01ogvos1sezrmd13a8o630v149f2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01ogvos1sezrmd13a8o630v149f2'>
+            <column caption='CF  - Central' datatype='integer' name='[CF-C]' role='measure' type='quantitative' />
+            <column caption='CF - Northeast' datatype='integer' name='[CF-NE]' role='measure' type='quantitative' />
+            <column caption='CF - Northwest' datatype='integer' name='[CF-NW]' role='measure' type='quantitative' />
+            <column caption='CF - Southeast' datatype='integer' name='[CF-SE]' role='measure' type='quantitative' />
+            <column caption='CF - Southwest' datatype='integer' name='[CF-SW]' role='measure' type='quantitative' />
+            <column caption='FF' datatype='integer' name='[Calculation_1178254298807713795]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[FF-C]+[FF-NE]+[FF-NW]+[FF-SE]+[FF-SW]' />
+            </column>
+            <column caption='CF' datatype='integer' name='[Calculation_1178254298808029188]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[CF-C]+[CF-NE]+[CF-NW]+[CF-SE]+[CF-SW]' />
+            </column>
+            <column caption='HM' datatype='integer' name='[Calculation_1178254298809303045]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[HM-C]+[HM-NE]+[HM-NW]+[HM-SE]+[HM-SW]' />
+            </column>
+            <column caption='FF  - Central' datatype='integer' name='[FF-C]' role='measure' type='quantitative' />
+            <column caption='FF - Northeast' datatype='integer' name='[FF-NE]' role='measure' type='quantitative' />
+            <column caption='FF - Northwest' datatype='integer' name='[FF-NW]' role='measure' type='quantitative' />
+            <column caption='FF - Southeast' datatype='integer' name='[FF-SE]' role='measure' type='quantitative' />
+            <column caption='FF - Southwest' datatype='integer' name='[FF-SW]' role='measure' type='quantitative' />
+            <column caption='HM  - Central' datatype='integer' name='[HM-C]' role='measure' type='quantitative' />
+            <column caption='HM - Northeast' datatype='integer' name='[HM-NE]' role='measure' type='quantitative' />
+            <column caption='HM - Northwest' datatype='integer' name='[HM-NW]' role='measure' type='quantitative' />
+            <column caption='HM - Southeast' datatype='integer' name='[HM-SE]' role='measure' type='quantitative' />
+            <column caption='HM - Southwest' datatype='integer' name='[HM-SW]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1178254298807713795]' derivation='Sum' name='[sum:Calculation_1178254298807713795:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1178254298808029188]' derivation='Sum' name='[sum:Calculation_1178254298808029188:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1178254298809303045]' derivation='Sum' name='[sum:Calculation_1178254298809303045:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:Calculation_1178254298808029188:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:Calculation_1178254298807713795:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.01ogvos1sezrmd13a8o630v149f2].[sum:Calculation_1178254298809303045:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='1081' />
+            <format attr='height' value='857' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]' value='Type of Fillet'>
+              <formatted-text>
+                <run>Type of Fillet</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]' />
+              <size column='[federated.01ogvos1sezrmd13a8o630v149f2].[Multiple Values]' />
+              <text column='[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{52119786-4E41-432C-82AB-9B27A4D38668}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5F51EDC5-AADF-4612-B6D3-0B33C86131EE}' />
+    </worksheet>
+    <worksheet name='Sheet 9'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{EE6574B9-E720-40BC-AD19-E4D8B7CC647A}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{95A7B03D-16CA-4C5D-84A2-7E7337250692}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{438F418B-4690-4BAA-BBC9-FD6C4682A0DD}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C06244EE-A38A-491F-99F1-280F9E1B5E8C}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B3E557AF-7991-4359-9F75-0C4F8103A2A0}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C7587E0A-2CEF-48EA-9347-74384D8A09DD}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='6' param='[federated.01ogvos1sezrmd13a8o630v149f2].[:Measure Names]' type='color' />
+            <card pane-specification-id='6' param='[federated.01ogvos1sezrmd13a8o630v149f2].[Multiple Values]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{191D0F54-848A-4DE9-8698-C989814DD777}' />
+    </window>
+    <window class='worksheet' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{07E0F8AB-6694-4AEA-9EC4-35634DC420E1}' />
+    </window>
+    <window class='worksheet' name='Sheet 10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8A3ABDA6-0BCF-4E7B-B2F7-8862549A4891}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0C54248B-7F4A-407B-8B1A-DC1BC6324A43}' />
+    </window>
+  </windows>
+</workbook>

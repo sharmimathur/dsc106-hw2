@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    margin-top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba(121, 0, 0, 0.685);
+}
+
+img {
+    width: auto;
+    height: auto;
+    margin: 10px;
+}
+
+p {
+    font-size: 25px;
+    margin: 10px;
+}
+
+header * {
+    display: inline;
+    height: 50px;
+}
+
+header ul {
+    padding: 0;
+}
+
+header li {
+    margin-left: 20px;
+}
+
+section {
+    height: auto;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#hero .profile-img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+}
+
+#hero h1 {
+    font-size: 3em;
+}
+
+section h2 {
+    font-size: 2.5em;
+}
+
+section h3 {
+    font-size: 1.5em;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+.left {
+    float: left;
+    padding: 0 20px 20px 0;
+    width: 60%;
+}
+
+
+/* Add everything below here */
+
+#hero {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://images2.minutemediacdn.com/image/upload/c_crop,h_3054,w_5434,x_0,y_358/f_auto,q_auto,w_1100/v1554924543/shape/mentalfloss/istock-637275080.jpg');
+}
+
+#overall_sandwich_sales .table {
+    float: left;
+    padding: 0px 100px 20px 0px;
+    width: 30%;
+    height: auto;
+}
+
+#sandwich_sale_distribution .table {
+    float: left;
+    padding: 0px 100px 20px 0px;
+    width: 30%;
+    height: auto;
+}
+
+#sandwich_sales_by_region .table {
+    float: left;
+    padding: 0px 50px 20px 0px;
+    width: 50%;
+    height: auto;
+}
+
+#sandwich_sales_week .table {
+    float: left;
+    padding: 0px 100px 20px 0px;
+    width: 50%;
+    height: auto;
+}
+
+#sandwich_monthly .table {
+    float: left;
+    padding: 0px 50px 20px 0px;
+    width: 50%;
+    height: auto;
+}
+
+#overall_sandwich_sales {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://images2.minutemediacdn.com/image/upload/c_crop,h_3054,w_5434,x_0,y_358/f_auto,q_auto,w_1100/v1554924543/shape/mentalfloss/istock-637275080.jpg');
+}
+
+#sandwich_sale_distribution {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://images2.minutemediacdn.com/image/upload/c_crop,h_3054,w_5434,x_0,y_358/f_auto,q_auto,w_1100/v1554924543/shape/mentalfloss/istock-637275080.jpg');
+}
+
+#sandwich_sales_by_region {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://images2.minutemediacdn.com/image/upload/c_crop,h_3054,w_5434,x_0,y_358/f_auto,q_auto,w_1100/v1554924543/shape/mentalfloss/istock-637275080.jpg');
+}
+
+#sandwich_sales_week {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://images2.minutemediacdn.com/image/upload/c_crop,h_3054,w_5434,x_0,y_358/f_auto,q_auto,w_1100/v1554924543/shape/mentalfloss/istock-637275080.jpg');
+}
+
+#sandwich_monthly {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://images2.minutemediacdn.com/image/upload/c_crop,h_3054,w_5434,x_0,y_358/f_auto,q_auto,w_1100/v1554924543/shape/mentalfloss/istock-637275080.jpg');
+}
